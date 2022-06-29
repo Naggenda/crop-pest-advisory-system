@@ -24,6 +24,36 @@ body {
     font-size:13px;
 }
 
+.navbar-section {
+    background: black;
+    color: white;
+   
+  }
+  .navbar-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .humberg {
+    display: none;
+  }
+  
+  .navlinks{
+      display: flex;
+  }
+  
+  .navlinks a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+  
+  .navlinks a:hover {
+    color: tomato;
+  }
+
 ul li {
     list-style: none;
 }
@@ -3510,4 +3540,25 @@ ul.chat-available-user li a:hover {
 
 #copyrights a {
   color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+    .humberg {
+      display: block;
+    }
+    .navbar-area {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    .navlinks {
+      display: none;
+      background-color: cadetblue;
+      position: absolute;
+      padding: 15px 0;
+      z-index: 1;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+    }
 }
