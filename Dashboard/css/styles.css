@@ -10,8 +10,9 @@ body{
     background: #fff;
     
     padding: 10px 0px;
-    position: fixed;
-    width: 100%;
+    /* position: fixed; */
+    height: 10vh;
+    /* width: 100%; */
     z-index: 1;
     box-shadow: 0 0 10px;
 
@@ -33,6 +34,14 @@ body{
   
   .navlinks{
       display: flex;
+  }
+
+  .logo-sect{
+      width: 20%;
+  }
+
+  .navbar-Links{
+      width: 80%;
   }
   
   .navlinks a {
@@ -69,13 +78,12 @@ input{
 .main-section{
     padding-top: 10px;
     background-color: blue;
-    height: 100vh;
+    height: 90vh;
     clip-path: polygon(50% 0%, 70% 100%, 60% 50%, 35% 100%, 25% 100%, 0% 100%, 0% 0%);
     align-items: center;
 }
 
 .row{
-    padding: 100px 0px;
     color: white;
     font-size: 15px;
     letter-spacing: 2px;
@@ -97,11 +105,16 @@ video{
     }
     .humberg {
         display: block;
+        float: right;
       }
       .navbar {
         display: flex;
         justify-content: space-between;
         position: relative;
+      }
+
+      .navbar-section{
+          padding: 0;
       }
       .navlinks {
         display: none;
@@ -110,6 +123,7 @@ video{
         padding: 15px 0;
         z-index: 1;
         left: 0;
+        top: 45px;
         width: 100%;
         flex-direction: column;
       }
