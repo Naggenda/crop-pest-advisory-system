@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Shopping cart</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .jumbotron {
+            padding-top: 30px;
+            padding-bottom: 0px;
+            /* background-image:url('images/car/car.jpg'); */
+            background-size: cover;
+            height: 350px;
+            width: 300px;
+        }
+
+        .login {
+            box-shadow: 0 0 5px;
+            width: 400px;
+            color: black;
+            padding: 20px 0;
+            border-radius: 8px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="login" id="login">
+
+            <div style="display: flex; justify-content: space-around;">
+                <h2>Sign in</h2>
+                <button onclick="close()">
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+
+            <form method="GET" action="index3.php">
+                <!-- <div class="row justify-content-center"> -->
+                <!-- <div class="form-group"> -->
+                <div class="jumbotron  text-center bg-light text-dark mt-5">
+                    <div class="form-group text-left mt-0 ">
+                        <label for="username">username or emailaddress</label>
+                        <input type="email" name="first-name" class="form-control" placeholder="Enter your email"
+                            id="email">
+                    </div>
+
+                    <div class="form-group text-left mt-0 ">
+                        <label for="username">password</label>
+                        <input type="password" name="password" class="form-control" placeholder="Enter password"
+                            id="password">
+                        <a class="label-link position-absolute top-0 right-0" tabindex="0" href="/password_reset">Forgot
+                            password?</a>
+                    </div>
+
+                    <div class="form-group mt-5">
+                        <input type="submit" value="Sign in" class="btn btn-success text-white btn-block btn-primary">
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-group mt-4">
+                <input type="submit" value="New to this site? create account"
+                    class="btn btn-light text-dark btn-block btn-primary">
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function close() {
+            var x = document.getElementById('login');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
